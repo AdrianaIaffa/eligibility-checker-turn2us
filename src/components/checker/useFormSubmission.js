@@ -14,26 +14,28 @@ function useFormSubmission() {
     const dobFeedback = document.getElementById('dob-Feedback');
     dobFeedback.textContent = ''; 
 
-    let hasInputErrors = false; // Flag for input format errors 
+    let hasInputErrors = false; 
 
     if (day && month && year) {
-      // Day Validation
+        dobFeedback.textContent = 'Invalid day. Please enter your date of birth again.';
       if (day.length > 2 || isNaN(parseInt(day)) || parseInt(day) < 1 || parseInt(day) > 31) {
           hasInputErrors = true;
       }
   
-      // Month Validation
+      
       if (month.length > 2 || isNaN(parseInt(month)) || parseInt(month) < 1 || parseInt(month) > 12) {
-          hasInputErrors = true;
+        dobFeedback.textContent = 'Invalid month. Please enter your date of birth again.';  
+        hasInputErrors = true;
       }
   
-      // Year Validation
+      
       if (year.length !== 4 || isNaN(parseInt(year)) || parseInt(year) > new Date().getFullYear()) {
-          hasInputErrors = true;
+        dobFeedback.textContent = 'Invalid year. Please enter your date of birth again.';  
+        hasInputErrors = true;
       }
 
       if (hasInputErrors) { 
-          console.log("Input format errors found, resetting form"); 
+        //   console.log("Input format errors found, resetting form"); 
           event.target.reset();
       } else {
           const dob = new Date(`${year}-${month}-${day}`); 
