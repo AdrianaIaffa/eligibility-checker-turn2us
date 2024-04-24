@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from './Form'
 import './checker.css'
 
 const Checker= () => {
@@ -8,7 +9,7 @@ const Checker= () => {
          <h1 className='section__title'>Benefits Eligibility Checker</h1>
 
         <div className="checker__container container grid">
-    
+        <Form />
         </div>
 
     </section>
