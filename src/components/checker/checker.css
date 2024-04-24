@@ -63,6 +63,14 @@ input:focus {
     outline: 2px solid blue;  
   }
 
+ .error__title {
+    margin-bottom: var(--mb-3);
+ }
+
+ .error__info p {
+    padding-bottom:var(--mb-3);
+ }
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
