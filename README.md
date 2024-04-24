@@ -1,3 +1,40 @@
+# Project Description
+
+This project implements a simple benefits eligibility checker using React and React Router DOM. The application features:
+
+* Homepage: Introduces the checker and includes an age-input field.
+* Success Page: Displayed to eligible users (18+ years old).
+* Error Page: Displayed to ineligible users due to their input age..
+
+# Prerequisites
+Requires [Node.js](https://nodejs.org/en) to run. You can download and install it from the official [Node.js](https://nodejs.org/en) website.
+
+# Installation
+ * Clone or Download the Project: Get the project code from your repository.
+ * Navigate to the Project Directory: Open a terminal or command prompt and navigate to the root of the project directory.
+ * Install Dependencies: Install the required libraries using the following command:
+    ```sh
+    npm install react-router-dom
+    ```
+
+# Usage
+* Run the Project:Start the development server, this will open [http://localhost:3000](http://localhost:3000)
+    ```sh
+    npm start
+    ```
+ * Enter your date of birth:  On the homepage, you'll find an input fields labeled "Day( DD)", "Month (MM)", "Year (YYYY)"
+
+* Submit: Click the button to proceed with the age verification
+
+Possible Outcomes:
+* Eligible: If you are 18 years or older, you will be redirected to the success page.
+* Not Eligible: If you do not meet the age requirement, you will be redirected to the error page.
+
+#Tech Stack:
+
+* React: A JavaScript library for building user interfaces and creating single-page web applications. React's focus on components promotes a modular and reusable development approach.
+* React Router DOM: A package specifically designed for routing within React applications on web browsers. It enables the dynamic creation of URL-driven navigation.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
