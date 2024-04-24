@@ -10,7 +10,7 @@ const Checker= () => {
 
   return (
     <section className="checker section" id="checker">
-         <h2 className='section__title'>Benefits Eligibility Checker</h2>
+         <h1 className='section__title'>Benefits Eligibility Checker</h1>
 
         <div className="checker__container container grid">
         <Routes location={location}>
