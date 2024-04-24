@@ -54,7 +54,7 @@ function useFormSubmission() {
               navigate('/success'); 
           } else {  
               console.log("Navigating to error (underage)"); 
-              
+              navigate('/error');
           }
       }
     }
