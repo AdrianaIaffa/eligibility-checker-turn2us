@@ -6,7 +6,7 @@ const Form = () => {
 
   return (
     <div className="form__content">
-      <h3 className="form__title">We need to check if you are eligible</h3>
+      <h2 className="form__title">We need to check if you are eligible</h2>
       <div className="form__group"> 
         <form className="form-container" id="eligibilityForm" onSubmit={handleSubmit}>
           <fieldset>
